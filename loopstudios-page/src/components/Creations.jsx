@@ -18,12 +18,12 @@ import FisheyeMobile from '../images/mobile/image-fisheye.jpg'
 
 const Creations = () => {
   return (
-    <section className='max-w-[1440px] h-[100vh] mx-auto p-6'>
+    <section className='max-w-[1440px] min-h-[100vh] md:min-h-full mx-auto p-6'>
       <div className='flex justify-center md:justify-between mb-14 md:mb-28'>
         <h2 className='uppercase text-3xl md:text-4xl lg:text-6xl'>our creations</h2>
         <button className='uppercase border-2 border-[--Black] py-2 px-12 hover:bg-[var(--Black)] hover:text-[var(--White)] hidden md:block'>see all</button>
       </div>
-      <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:grid-rows-4  gap-8 font-josefin'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-8 font-josefin'>
 
         <div className='group relative cursor-pointer group'>
           <div className='absolute bg-[var(--White)] opacity-0 group-hover:opacity-50 w-full h-full'></div>
@@ -98,6 +98,8 @@ const Creations = () => {
         </div>
 
       </div>
+
+      <button className='uppercase text-xl border-2 border-[--Black] py-4 px-16 hover:bg-[var(--Black)] hover:text-[var(--White)] block mx-auto md:hidden mt-14'>see all</button>
     </section>
   )
 }
